@@ -33,8 +33,8 @@ on:
 # Environment variables available to all jobs and steps in this workflow
 env:
   GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: example-gke-cluster
-  GKE_ZONE: us-west1-a
+  GKE_CLUSTER: cluster-test61
+  GKE_ZONE: us-central1-c
   IMAGE: static-site
 
 jobs:
