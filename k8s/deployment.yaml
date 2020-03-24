@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crontest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crontest
+  template:
+    metadata:
+      labels:
+        app: crontest
+    spec:
+      containers:
+        - name: crontest
+          image: hub/image
+          env:
+            - name: MONGODB_PASS
+              value: mongodb
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: "10m"
