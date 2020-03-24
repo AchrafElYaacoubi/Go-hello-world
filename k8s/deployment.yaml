@@ -14,9 +14,4 @@ spec:
               env:
                 - name: MONGODB_PASS
                   value: mongodb
-              ports:
-                - containerPort: 80
-              imagePullPolicy: Always
-              resources:
-                requests:
-                  cpu: "10m"
+            restartPolicy: OnFailure
