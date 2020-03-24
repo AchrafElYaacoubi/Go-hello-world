@@ -9,9 +9,6 @@ spec:
       template:
         spec:
           containers:
-            - name: crontest
-              image: hub/image
-              env:
-                - name: MONGODB_PASS
-                  value: mongodb
-            restartPolicy: OnFailure
+          - name: crontest
+            image: hub/image
+          restartPolicy: OnFailure
