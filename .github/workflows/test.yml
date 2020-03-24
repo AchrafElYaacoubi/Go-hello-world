@@ -70,6 +70,4 @@ jobs:
         cd k8s
         gcloud container clusters get-credentials $GKE_CLUSTER --zone $GKE_ZONE --project $GKE_PROJECT
         ./kustomize edit set image hub/image=gcr.io/$GKE_PROJECT/$IMAGE:${GITHUB_SHA}
-        ./kustomize build . | kubectl apply -f -
-        kubectl rollout status deployment/crontest
-        kubectl get services -o wide
+        ./kustomize build .
