@@ -39,7 +39,7 @@ For pushes to the _default_ branch, `master`, the workflow will:
 
 ## Setup
 
-1. Create or reuse a Github repository for the example workflow:
+1. Create or reuse a Github reposiory for the example workflow:
 
   1. [Create a repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository).
 
